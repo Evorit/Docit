@@ -1,0 +1,18 @@
+title: "Docit Docs"
+description: "Documentation for Docit"
+sourceDir: "docs"
+outputDir: "dist"
+theme:
+  primaryColor: "#3b82f6"
+nav:
+  - text: "Home"
+    link: "index.html"
+  - text: "Guide"
+    link: "guide.html"
+  - text: "GitHub"
+    link: "https://github.com"
+sidebar:
+  - title: "Getting Started"
+    items:
+      - "index.md"
+      - "guide.md"
