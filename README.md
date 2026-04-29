@@ -21,9 +21,11 @@ Docit transforms your Markdown files into clean, responsive static HTML document
 
 ### Installation
 
-Download the latest release for your platform from the releases page, or build from source:
+build from source:
 
 ```bash
+git clone https://github.com/Evorit/Docit.git
+cd Docit
 go build -o docit ./cmd/docit
 ```
 
@@ -104,35 +106,6 @@ Docit supports standard Markdown:
 - Tables
 - Blockquotes
 
-## Project Structure
-
-```
-my-docs/
-├── cmd/docit/main.go     # Source code
-├── docs/                 # Markdown source files
-│   ├── index.md
-│   └── guide.md
-├── dist/                 # Generated HTML (gitignored)
-├── docit.yaml           # Configuration
-└── .gitignore
-```
-
-## Development
-
-### Build from Source
-
-```bash
-git clone https://github.com/yourusername/docit.git
-cd docit
-go build -o docit ./cmd/docit
-```
-
-### Run Tests
-
-```bash
-go test ./...
-```
-
 ## Philosophy
 
 Docit follows the principle of **minimal JavaScript**:
@@ -143,7 +116,9 @@ Docit follows the principle of **minimal JavaScript**:
 
 ## License
 
-MIT License - see LICENSE file for details.
+BSD-3-Clause license
+
+see LICENSE file for details.
 
 ## Contributing
 
