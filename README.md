@@ -15,16 +15,15 @@ Docit transforms your Markdown files into clean, responsive static HTML document
 - **Minimal JS** - Only ~50 lines of optional enhancement JS
 - **Navigation** - Auto-generated sidebar and table of contents
 - **Customizable** - Configurable theme colors and layout
+- **Supports night mode** - Supports night mode detection and switching. Protects your eyes.
 
 ## Quick Start
 
 ### Installation
 
-build from source:
+Download the latest release for your platform from the releases page, or build from source:
 
 ```bash
-git clone https://github.com/Evorit/Docit.git
-cd Docit
 go build -o docit ./cmd/docit
 ```
 
@@ -105,6 +104,35 @@ Docit supports standard Markdown:
 - Tables
 - Blockquotes
 
+## Project Structure
+
+```
+my-docs/
+├── cmd/docit/main.go     # Source code
+├── docs/                 # Markdown source files
+│   ├── index.md
+│   └── guide.md
+├── dist/                 # Generated HTML (gitignored)
+├── docit.yaml           # Configuration
+└── .gitignore
+```
+
+## Development
+
+### Build from Source
+
+```bash
+git clone https://github.com/yourusername/docit.git
+cd docit
+go build -o docit ./cmd/docit
+```
+
+### Run Tests
+
+```bash
+go test ./...
+```
+
 ## Philosophy
 
 Docit follows the principle of **minimal JavaScript**:
@@ -115,9 +143,7 @@ Docit follows the principle of **minimal JavaScript**:
 
 ## License
 
-BSD-3-Clause license
-
-see LICENSE file for details.
+MIT License - see LICENSE file for details.
 
 ## Contributing
 
